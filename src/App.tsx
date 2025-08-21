@@ -1,13 +1,11 @@
-import MESSAGES from "./Data/messages";
-import USERS from "./Data/users.tsx";
-import Messages from "./components/Messages";
-import Users from "./components/users.tsx";
+import { Counter, Counter2, LiveTextDisplay } from "./components/UseState";
 
 function App() {
   return (
     <>
-      <Messages messages={MESSAGES} />
-      <Users users={USERS} />
+      <Counter />
+      <Counter2 />
+      <LiveTextDisplay />
     </>
   );
 }
