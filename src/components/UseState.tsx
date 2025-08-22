@@ -54,9 +54,8 @@ function Counter2() {
 function LiveTextDisplay() {
   let [text, setText] = useState("");
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setText(event.target.value);
-    console.log(text.length + 1);
   };
 
   return (
