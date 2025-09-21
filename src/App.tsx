@@ -1,15 +1,9 @@
-import Hero_section from "./Portfolio components/Hero_section";
-import My_projects from "./Portfolio components/My_projects";
-import Navbar from "./Portfolio components/Navbar";
-import Skill_section from "./Portfolio components/Skill_section";
+import Dashboard_navbar from "./Birth declaration components/Dashboard_banner";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero_section />
-      <Skill_section />
-      <My_projects />
+      <Dashboard_navbar />
     </>
   );
 }
