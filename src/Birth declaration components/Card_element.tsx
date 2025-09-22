@@ -6,11 +6,10 @@ type Props = {
   total: number;
   info: string;
   icon: LucideIcon;
-  color: string;
 };
 
 function Card_element(props: Props) {
-  const { head, total, info, icon: Icon, color } = props;
+  const { head, total, info, icon: Icon } = props;
 
   return (
     <>

@@ -11,7 +11,6 @@ function Card_parent() {
             total={8}
             info="All Time"
             icon={File}
-            color="green-500"
           />
           <Card_element
             head="Draft"
