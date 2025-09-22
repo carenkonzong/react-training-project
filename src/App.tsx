@@ -1,9 +1,11 @@
+import Card_parent from "./Birth declaration components/Card_parent";
 import Dashboard_navbar from "./Birth declaration components/Dashboard_banner";
 
 function App() {
   return (
     <>
       <Dashboard_navbar />
+      <Card_parent />
     </>
   );
 }

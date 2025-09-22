@@ -5,8 +5,8 @@ import { Activity } from "lucide-react";
 function Dashboard_banner() {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="flex flex-col mt-10 p-10 bg-gradient-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-[1216px]">
+      <div className="flex justify-center m-5 ">
+        <div className="flex flex-col p-10 bg-gradient-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-[1216px] shadow-xl">
           <div className="flex flex-row">
             <div className="flex items-center mr-3">
               <Activity size={35} color="white" />
