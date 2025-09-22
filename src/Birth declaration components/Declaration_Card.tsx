@@ -3,7 +3,7 @@ import { Clock, Calendar } from "lucide-react";
 type Props = {
   id: string;
   firstName: string;
-  lastName: string;
+  lastName?: string;
   birthDate: string;
   status: string;
 };
@@ -13,7 +13,7 @@ function Declaration_Card(props: Props) {
 
   return (
     <>
-      <div className="flex justify-center m-5 ">
+      <div className="flex justify-center mt-5 ">
         <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/25">
           <div>
             <h1 className="text-xl font-semibold mb-1">
