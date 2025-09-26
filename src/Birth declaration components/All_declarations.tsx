@@ -1,16 +1,19 @@
 import { CirclePlus } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function All_declarations() {
   useEffect(() => {
-    let users;
+    /* const [users, setUsers] = useState([]); */
 
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((data) => {
-        users = data;
-        console.log(users[0]);
+        /* setUsers(data); */
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching users:", error);
       });
   }, []);
 
@@ -35,13 +38,15 @@ function All_declarations() {
             </div>
           </div>
           <div>
-            <Declaration_Card
-              id="JKW4URKN4"
-              firstName="Emma"
-              lastName="Doe"
-              birthDate="1/15/2024"
-              status="Submitted"
-            />
+            {/* {users.map((user) => (
+              <Declaration_Card
+                id={user.id}
+                firstName="Emma"
+                lastName="Doe"
+                birthDate="1/15/2024"
+                status="Submitted"
+              />
+            ))} */}
           </div>
         </div>
       </div>

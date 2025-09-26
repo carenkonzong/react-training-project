@@ -2,10 +2,10 @@ import { Clock, Calendar } from "lucide-react";
 
 type Props = {
   id: string;
-  firstName: string;
+  firstName?: string;
   lastName?: string;
-  birthDate: string;
-  status: string;
+  birthDate?: string;
+  status?: string;
 };
 
 function Declaration_Card(props: Props) {
