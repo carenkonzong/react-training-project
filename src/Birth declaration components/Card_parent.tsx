@@ -4,7 +4,7 @@ import { File, Archive, ClipboardClock, CalendarCheck } from "lucide-react";
 function Card_parent() {
   return (
     <>
-      <div className="flex justify-center my-10 mx-5">
+      <div className="flex justify-center my-10 mx-5 ">
         <div className="w-full max-w-[1216px] grid grid-cols-4 gap-5">
           <Card_element
             head="Total Declarations"

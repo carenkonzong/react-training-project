@@ -2,15 +2,23 @@ import { CirclePlus } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
 import { useEffect, useState } from "react";
 
-function All_declarations() {
-  useEffect(() => {
-    /* const [users, setUsers] = useState([]); */
+type User = {
+  id: string;
+  name?: string;
+  phone?: string;
+  birthDate?: string;
+  status?: string;
+};
 
+function All_declarations() {
+  const [users, setUsers] = useState<User[]>([]);
+
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
-      .then((data) => {
-        /* setUsers(data); */
-        console.log(data);
+      .then((data: User[]) => {
+        setUsers(data);
+        console.log(users);
       })
       .catch((error) => {
         console.error("Error fetching users:", error);
@@ -20,7 +28,7 @@ function All_declarations() {
   return (
     <>
       <div className="flex justify-center m-5 ">
-        <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/25 flex-col shadow-xl">
+        <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/10 flex-col shadow-xl bg-[#fdfdfd]">
           <div className="flex">
             <div>
               <h1 className="text-2xl font-semibold mb-1">
@@ -38,15 +46,14 @@ function All_declarations() {
             </div>
           </div>
           <div>
-            {/* {users.map((user) => (
+            {users.map((user) => (
               <Declaration_Card
                 id={user.id}
-                firstName="Emma"
-                lastName="Doe"
-                birthDate="1/15/2024"
+                firstName={user.name}
+                birthDate={user.phone}
                 status="Submitted"
               />
-            ))} */}
+            ))}
           </div>
         </div>
       </div>
