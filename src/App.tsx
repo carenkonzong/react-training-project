@@ -1,12 +1,13 @@
 import Card_parent from "./Birth declaration components/Card_parent";
 import Dashboard_navbar from "./Birth declaration components/Dashboard_banner";
-import Declaration_Card from "./Birth declaration components/Declaration_Card";
 import All_declarations from "./Birth declaration components/All_declarations";
+import Sidebar from "./Birth declaration components/sidebar";
 
 function App() {
   return (
     <>
-      <Dashboard_navbar />
+      <Sidebar />
+
       <Card_parent />
       <All_declarations />
     </>

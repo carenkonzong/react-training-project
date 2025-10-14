@@ -28,7 +28,7 @@ function All_declarations() {
   return (
     <>
       <div className="flex justify-center m-5 ">
-        <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/10 flex-col shadow-xl bg-[#fdfdfd]">
+        <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/10 flex-col shadow-xl bg-[#fafafa]">
           <div className="flex">
             <div>
               <h1 className="text-2xl font-semibold mb-1">

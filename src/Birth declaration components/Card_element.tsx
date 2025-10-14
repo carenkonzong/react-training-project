@@ -13,7 +13,7 @@ function Card_element(props: Props) {
 
   return (
     <>
-      <div className="p-5 border border-black/10 inline-block w-full rounded-xl shadow-lg bg-[#fdfdfd]">
+      <div className="p-5 border border-black/10 inline-block w-full rounded-xl shadow-lg bg-[#fafafa] hover:-translate-1 transition-all duration-300 hover:shadow-xl">
         <div className="flex items-center">
           <div>
             <p className="text-gray-500 mb-2">{head}</p>
