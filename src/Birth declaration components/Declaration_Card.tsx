@@ -14,7 +14,7 @@ function Declaration_Card(props: Props) {
   return (
     <>
       <div className="flex justify-center mt-5 ">
-        <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/10 bg-[#fbfbfb] hover:-translate-1 transition-all duration-300 hover:shadow-lg">
+        <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/10 bg-[#fbfbfb] hover:-translate-1 transition-all duration-300 hover:shadow-lg ">
           <div>
             <h1 className="text-xl font-semibold mb-1">
               {firstName} {lastName}
@@ -37,7 +37,7 @@ function Declaration_Card(props: Props) {
               </div>
               {status}
             </h1>
-            <button className="border px-3 py-1 rounded-xl border-black/25 ">
+            <button className="border px-3 py-1 rounded-xl border-black/25 cursor-pointer hover:bg-[#23bf72] hover:text-white transition duration-300 hover:border-white">
               View Details
             </button>
           </div>
