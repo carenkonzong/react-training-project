@@ -8,7 +8,7 @@ function Sidebar() {
       <aside className="bg-[#fbfbfb] border-r border-black/10 w-70 fixed flex flex-col h-full">
         <>
           <div className="flex justify-center m-5 mb-8 mt-10">
-            <div className="flex flex-col p-8 bg-gradient-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-[1216px] shadow-xl">
+            <div className="flex flex-col py-8 px-5 bg-gradient-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-[1216px] shadow-xl">
               <div className="flex flex-row mb-5">
                 <div className="flex items-center mr-3">
                   <Activity size={35} color="white" />
@@ -34,25 +34,29 @@ function Sidebar() {
         <div className="p-3 px-3 mt-5 flex flex-col  text-gray-500">
           <div className="mb-15 px-3">
             <h1 className="mb-5 px-3">NAVIGATION</h1>
-            <h1 className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
-              <House size={18} className="mr-5" />
-              Dashboard
-            </h1>
-            <h1 className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
-              <FileText size={18} className="mr-5" />
-              All Declarations
-            </h1>
+            <ul>
+              <li className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
+                <House size={18} className="mr-5" />
+                Dashboard
+              </li>
+              <li className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
+                <FileText size={18} className="mr-5" />
+                All Declarations
+              </li>
+            </ul>
           </div>
           <div className="px-3">
             <h1 className="mb-5 px-3">ACCOUNT</h1>
-            <h1 className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
-              <User size={18} className="mr-5" />
-              Profile
-            </h1>
-            <h1 className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
-              <Bell size={18} className="mr-5" />
-              Notifications
-            </h1>
+            <ul>
+              <li className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
+                <User size={18} className="mr-5" />
+                Profile
+              </li>
+              <li className="flex px-3 py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
+                <Bell size={18} className="mr-5" />
+                Notifications
+              </li>
+            </ul>
           </div>
         </div>
         <div className="mt-auto">
