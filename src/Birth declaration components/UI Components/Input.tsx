@@ -1,16 +1,16 @@
 type Props = {
   type: string;
-  attribute: string;
+  head: string;
   placeholder?: string;
 };
 
-function Input(props: Props) {
+function Input({ head, type, placeholder }: Props) {
   return (
-    <div className="mb-10">
-      <h3 className="mb-3">{props.attribute}</h3>
+    <div className="mb-5">
+      <h3 className="mb-3 text-sm">{head}</h3>
       <input
-        type={props.type}
-        placeholder={props.placeholder}
+        type={type}
+        placeholder={placeholder}
         className="border rounded-lg w-full border-black/10 bg-white p-2"
       />
     </div>

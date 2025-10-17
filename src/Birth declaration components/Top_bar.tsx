@@ -18,12 +18,12 @@ function Top_bar() {
       <div className="flex items-center">
         <div className="flex mr-5 items-center rounded-2xl cursor-pointer hover:text-white hover:bg-[#23bf72] transition-all duration-300 px-4 py-2">
           <div className="mr-5">
-            <Globe size={18} />
+            <Globe size={17} />
           </div>
-          <div>EN</div>
+          <div className="text-sm">EN</div>
         </div>
         <div className="hover:bg-[#23bf72] hover:text-white cursor-pointer transition-all duration-300 p-3 rounded-2xl">
-          <Sun />
+          <Sun size={18} />
         </div>
       </div>
     </div>

@@ -4,14 +4,14 @@ type Props = {
   type: string;
 };
 
-function Select(props: Props) {
+function Select({ option1, option2, type }: Props) {
   return (
     <>
       <div>
-        <h1 className="mb-3">{props.type}</h1>
+        <h1 className="mb-3 text-sm">{type}</h1>
         <select className="border rounded-lg w-full border-black/10 bg-white p-2">
-          <option>{props.option1}</option>
-          <option>{props.option2}</option>
+          <option>{option1}</option>
+          <option>{option2}</option>
         </select>
       </div>
     </>
