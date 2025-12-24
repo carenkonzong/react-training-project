@@ -1,12 +1,30 @@
-import New_declaration_page from "./Birth declaration components/Pages/New_declaration_page";
-
-import Top_bar from "./Birth declaration components/Top_bar";
+import ExpenseList from "./components/expenseList";
+import AddExpense from "./components/addExpense";
+import Header from "./components/header";
+import { useEffect, useState } from "react";
+import type { expense } from "./types";
 
 function App() {
+  const [expenses, setExpenses] = useState<expense[]>([]);
+
+  const fetchExpenses = async () => {
+    try {
+      const response = await fetch("http://localhost:4000/expenses");
+      const data = await response.json();
+      setExpenses(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    fetchExpenses();
+  }, []);
+
   return (
     <>
-      <Top_bar />
-      <New_declaration_page />
+      <Header />
+      <AddExpense onUpdate={fetchExpenses} />
+      <ExpenseList expenses={expenses} onReset={fetchExpenses} />
     </>
   );
 }
