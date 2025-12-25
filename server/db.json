@@ -1,0 +1,32 @@
+{
+  "expenses": [
+    {
+      "id": "1878e4d3-4552-41da-9c0d-c6370ae4f91f",
+      "label": "In eos saepe omnis ",
+      "amount": 79,
+      "date": "1998-10-30",
+      "category": "Entertainment"
+    },
+    {
+      "id": "d3c1c666-47a5-4110-b6cd-7cf1d3c384c3",
+      "label": "Quibusdam qui dolor ",
+      "amount": 63,
+      "date": "2018-11-23",
+      "category": "Food & Dining"
+    },
+    {
+      "id": "7e65d832-020f-4a41-8281-3899b96a21c0",
+      "label": "Modi alias facere se",
+      "amount": 13,
+      "date": "1995-08-16",
+      "category": "Shopping"
+    },
+    {
+      "id": "b82f6cfc-0c7c-427f-9d94-924c878dfbd4",
+      "label": "Dolore eos consequa",
+      "amount": 74,
+      "date": "1981-04-25",
+      "category": "Food & Dining"
+    }
+  ]
+}
